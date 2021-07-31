@@ -30,3 +30,7 @@
 ### ConfigurationBuilder
 - Dùng để nạp các setting từ file [appsettings.json]
     <!-- https://xuanthulab.net/dependency-injection-di-trong-c-voi-servicecollection.html -->
+
+### Seeding Data
+- Khởi tạo data
+    <!-- https://docs.microsoft.com/vi-vn/ef/core/modeling/data-seeding -->

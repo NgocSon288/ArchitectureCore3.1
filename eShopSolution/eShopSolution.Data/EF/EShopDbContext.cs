@@ -1,5 +1,6 @@
 ﻿using eShopSolution.Data.Configurations;
 using eShopSolution.Data.Entities;
+using eShopSolution.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace eShopSolution.Data.EF
@@ -41,9 +42,9 @@ namespace eShopSolution.Data.EF
 
             //modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims");
             //modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
-
+                
             //Data seeding
-            //modelBuilder.Seed();
+            modelBuilder.Seed();
             //base.OnModelCreating(modelBuilder);
         }
 

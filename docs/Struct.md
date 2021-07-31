@@ -10,6 +10,8 @@
             [2.3.Enums]
             [2.4.Configurations]
                 <!-- ProductConfiguration.cs --> [2.4.1]
+            [2.5.Extensions]
+                <!-- ModelBuilderExtension.cs -->   [2.5.1]
         [3.eShopSolution.Application]
 
 # 1.WebApp
@@ -18,6 +20,7 @@
 # 2.Data
 - [2.4.1] [*]: Fluent API
     <!-- https://www.learnentityframeworkcore.com/configuration/fluent-api -->
+- [2.5.1] là file [Init-Data]
 
 # ---------------------------------------------------------------------------
 # 3.Application
@@ -96,7 +99,24 @@
     3. Thực hiện migration để update databse
 
 ## Tạo database seeding
+- Tạo một file mở rộng để thực hiện [Init-data]
+- Thực hiện Insert bằng phương thức [HasData(*)]
+    - [*] là danh sách các [Object]
+- Phải có ID, không giống như Insert bằng EF
 
+    <!-- 
+        modelBuilder.Entity<AppConfig>().HasData(
+            new AppConfig() { Key = "HomeTitle", Value = "This is home page of eShopSolution" },
+            new AppConfig() { Key = "HomeKeyword", Value = "This is keyword of eShopSolution" }
+        );
+        modelBuilder.Entity<Language>().HasData(
+            new Language() { Id = "vi", Name = "Tiếng Việt", IsDefault = true },
+            new Language() { Id = "en", Name = "English", IsDefault = false }
+        ); 
+    -->
+- Sau đó dùng trong [OnModelCreating]
+    <!-- modelBuilder.Seed(); -->
+- Thực hiện migration, update database
 
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
