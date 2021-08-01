@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "eShopSolution.BackendApi/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.17",
           "Swashbuckle.AspNetCore": "6.1.4",
           "Utilities": "1.0.0",
           "eShopSolution.Application": "1.0.0",
@@ -300,6 +301,20 @@
         },
         "compile": {
           "eShopSolution.BackendApi.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.17": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31808"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.17": {
@@ -1610,6 +1625,7 @@
       },
       "eShopSolution.Application/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.17",
           "Microsoft.AspNetCore.Http.Features": "3.1.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.17",
@@ -3212,6 +3228,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HUb1PtlvXhT7EXrNm9NRdgwR+Urz6wXWIKUnJukgPUWH1ZlVKtTsYzw1kNBsJXba/UcZ6Fr+1SPFd9syk/2YHg==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.17",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.1.17.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.17": {
       "type": "package",

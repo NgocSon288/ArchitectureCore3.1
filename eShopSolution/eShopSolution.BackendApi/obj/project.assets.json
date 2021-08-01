@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.17": {
         "type": "package",
         "compile": {
@@ -1687,6 +1702,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.17",
           "Microsoft.AspNetCore.Http.Features": "3.1.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.17",
@@ -1746,6 +1762,21 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.17": {
+      "sha512": "HUb1PtlvXhT7EXrNm9NRdgwR+Urz6wXWIKUnJukgPUWH1ZlVKtTsYzw1kNBsJXba/UcZ6Fr+1SPFd9syk/2YHg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.17.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.17": {
       "sha512": "3FpaHJj8wmEZc/7dRfIp1PS9LV6c3THjILVdqs/DS1dRsDyX166YgO5iyjIqcT2e5bnvyrCTawxnlFMFUx2EJQ==",
       "type": "package",
@@ -6268,6 +6299,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.17",
       "Swashbuckle.AspNetCore >= 6.1.4",
       "Utilities >= 1.0.0",
       "eShopSolution.Application >= 1.0.0",
@@ -6327,6 +6359,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.17, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.1.4, )"

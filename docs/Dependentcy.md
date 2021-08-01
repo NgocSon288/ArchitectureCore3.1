@@ -18,6 +18,9 @@
 ## Sử dụng Swagger
     - Swashbuckle.AspNetCore
 
+## Jwt - Authentication
+    - Microsoft.AspNetCore.Authentication.JwtBearer
+
 
 # ----------------------------------------------------------------
 ## Link

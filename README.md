@@ -20,6 +20,8 @@
     - Microsoft.AspNetCore.Http.Features
 6. Swagger
     - Swashbuckle.AspNetCore
+7. Jwt - Authentication
+    - Microsoft.AspNetCore.Authentication.JwtBearer
 ## How to configure and run
 
 ## How to contribute

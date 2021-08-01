@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AD3typMonnxlm+QXVNO3IwlN/p5xvEprjVbJXAXtTRUCXZQaSMKOPxbIMyD8SGCM8PYDi/rHaXUeZdAuJidmiA==",
+  "dgSpecHash": "oZSu9AEMF5HBObdrpsbvuQDSA3ZzhW1hckC2LsZbGgmJ8z9FjlurfLfTffVAEMI1iuUxMlF3H1QNMeoFSP/pXg==",
   "success": true,
   "projectFilePath": "D:\\Code\\Architecture\\ArchitectureCore3.1\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.17\\microsoft.aspnetcore.authentication.jwtbearer.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.17\\microsoft.aspnetcore.cryptography.internal.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.17\\microsoft.aspnetcore.cryptography.keyderivation.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.17\\microsoft.aspnetcore.http.features.3.1.17.nupkg.sha512",

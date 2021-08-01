@@ -105,7 +105,7 @@ namespace eShopSolution.Data.Extensions
                 Email = "18521694@gm.uit.edu.vn",
                 NormalizedEmail = "18521694@gm.uit.edu.vn",
                 EmailConfirmed = true,
-                PasswordHash = hasher.HashPassword(null, "@SOn123"),
+                PasswordHash = hasher.HashPassword(null, "@z`n123"),
                 SecurityStamp = string.Empty,
                 FirstName = "Ngọc",
                 LastName = "Sơn",

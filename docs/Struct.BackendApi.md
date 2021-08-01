@@ -36,3 +36,17 @@
 
 - Nếu ta muốn chạy một cái là nó vào ngay đường dẫn của [Swagger] thì ta add [*] vào [Properties/lauchSettings.json]
     <!-- "launchUrl": "swagger", -->
+
+# Sử dụng các đối tượng của Identity
+- Thựa hiện Inject 3 đối tượng chính [UserManager], [SignInManager], [RoleManager]
+    <!-- 
+        services.AddIdentity<AppUser, AppRole>()
+            .AddEntityFrameworkStores<EShopDbContext>()
+            .AddDefaultTokenProviders();
+        services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
+        services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
+        services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>(); 
+    -->
+
+# Sử dụng Jwt
+- Coi trong [jwt.md]
