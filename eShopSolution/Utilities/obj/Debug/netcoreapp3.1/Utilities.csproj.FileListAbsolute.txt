@@ -1,0 +1,9 @@
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\bin\Debug\netcoreapp3.1\Utilities.deps.json
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\bin\Debug\netcoreapp3.1\Utilities.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\bin\Debug\netcoreapp3.1\Utilities.pdb
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\obj\Debug\netcoreapp3.1\Utilities.AssemblyInfoInputs.cache
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\obj\Debug\netcoreapp3.1\Utilities.AssemblyInfo.cs
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\obj\Debug\netcoreapp3.1\Utilities.csproj.CoreCompileInputs.cache
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\obj\Debug\netcoreapp3.1\Utilities.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\obj\Debug\netcoreapp3.1\Utilities.pdb
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\Utilities\obj\Debug\netcoreapp3.1\Utilities.csproj.AssemblyReference.cache

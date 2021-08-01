@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "eShopSolution.ViewModels/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "3.1.17"
+        },
+        "runtime": {
+          "eShopSolution.ViewModels.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/3.1.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.17",
+          "System.IO.Pipelines": "4.7.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.1.17": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "System.IO.Pipelines/4.7.4": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "4.0.2.3",
+            "fileVersion": "4.700.20.56604"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "eShopSolution.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Features/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U+VM5fyEWYLIsSd1gm3gaau1WlCVTn4Z10jL1sMrfvDWjCd3dj164R5uk51Z2MKoRpqdSBnN31hNjBqpfudmng==",
+      "path": "microsoft.aspnetcore.http.features/3.1.17",
+      "hashPath": "microsoft.aspnetcore.http.features.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Dps198+KGasKjBZ66s9cOMJjZJZ2GJ3hHrmHcKiCXMB9r4ZDsD7wDXbswiGVf+da5WglA28ZFpxX1kq5S9TCGQ==",
+      "path": "microsoft.extensions.primitives/3.1.17",
+      "hashPath": "microsoft.extensions.primitives.3.1.17.nupkg.sha512"
+    },
+    "System.IO.Pipelines/4.7.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TQqNjDcTVu6eTDB2S0vjSUhn0udEugL93D9zgsOsSiJO1kv1UWDM2o0+79H95I5X+S0VPEzm4ihj6KPwhNEb7g==",
+      "path": "system.io.pipelines/4.7.4",
+      "hashPath": "system.io.pipelines.4.7.4.nupkg.sha512"
+    }
+  }
+}

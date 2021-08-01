@@ -2,17 +2,11 @@
 - Cấu trúc theo tedu
     [0.eShopSolution]
         [1.eShopSolution.WebApp]
-        [2.eShopSolution.Data]
-            [2.1.Entities]
-                <!-- Product.cs -->
-            [2.2.EF]
-                <!-- EShopDbContext.cs -->
-            [2.3.Enums]
-            [2.4.Configurations]
-                <!-- ProductConfiguration.cs --> [2.4.1]
-            [2.5.Extensions]
-                <!-- ModelBuilderExtension.cs -->   [2.5.1]
-        [3.eShopSolution.Application]
+        [2.eShopSolution.Data] 
+        [3.eShopSolution.Application]  
+        [4.eShopSolution.ViewModels] 
+        [5.eShopSolution.Utilities]
+        [6.eShopSolution.BackendApi]
 
 # 1.WebApp
 
@@ -24,9 +18,32 @@
 
 # ---------------------------------------------------------------------------
 # 3.Application
+- Các [Folder] tầng [Application] và tầng [ViewModels] giống nhau
+    - [3.1] là Folder phân chia theo [Module]
+    - [3.1.1] là một folder [Entity]
+    - [3.1.1.1] trong mỗi [3.1.1] có 2 file, 1 file là [Interface], một file là [Implement-Interface] đó. 
+- [3.2] chứa các [Service] chung cho tất cả các [Module] có thể dùng chung như: [Save-File], [Delete-File]
 
 # ---------------------------------------------------------------------------
-# Quy trình tạo DB [2.4.1]
+# 4.ViewModels
+- Các [Folder] tầng [Application] và tầng [ViewModels] giống nhau
+- Các thư mục có chức năng tương tự tầng [Application]
+- Nhưng tầng [ViewModels] chỉ chứa các [DTO] [Request] [Response] cho [Application] chuyển và nhận đến và từ tầng [Application] với các tầng khác
+
+- [4.2] chứa các [DTO] dùng chung như: [PagedResult], [API-Result]
+
+
+# ---------------------------------------------------------------------------
+# 5.Utilities
+- Chứa các code dùng chun cho các Project như: các biến [Constants], các [Custom-Exceptions]
+
+# ---------------------------------------------------------------------------
+# 6.BackendAPI
+- Tầng này thực hiện tạo các [API] để có thể cho các [Application] khác thao tác dữ liệu tới
+- Xem thêm (Struct.BackendApi.md)
+
+# ---------------------------------------------------------------------------
+# Quy trình tạo DB basic [2.4.1]
 - Tạo các [Entities] đặt trong thư mục [2.1]
     - Nếu các dữ liệu dạng [Enum] thì tạo các enum trong thư mục [2.3]
 - Tạo lớp [DbContext] trong [2.2]
@@ -119,8 +136,83 @@
 - Thực hiện migration, update database
 
 # ---------------------------------------------------------------------------
+# Tạo Identity  
+- Lớp DbContext kế thừa [IdentityDbContext] thay vỉ [DbContext]
+    <!-- public class EShopDbContext : IdentityDbContext<AppUser, AppRole, Guid> -->
+- Tạo lớp [AppUser] kế thừa từ lớp [IdentityUser] để có thêm thuộc tính cần thiết
+    <!-- 
+        public class AppUser : IdentityUser<Guid>
+        {
+            public string FirstName { get; set; }
+        } 
+    -->
+- Tạo lớp [AppRole] kế thừa từ lớp [IdentityRole] để có thêm thuộc tính cần thiết
+    <!-- 
+        public class AppRole : IdentityRole<Guid>
+        {
+            public string Description { get; set; }
+        } 
+    -->
+- Và tạo [Config] cho [AppUser,AppRole] như các file Config trước
+- Còn những [Class] khác của [Identity] thì ta [Config] trực tiếp trong [OnModelCreating]
+    - Những lớp có class kế thừa
+        <!-- modelBuilder.ApplyConfiguration(new AppUserConfiguration()); -->
+    - Nhưng lớp không có class kế thừa
+        <!-- modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims"); -->
+
+- Có thể tạo thêm Seed data cho Identity
+
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
+# Temp
+## Layer Data
+- Version 1
+    [0.eShopSolution]
+        [1.eShopSolution.WebApp]
+        [2.eShopSolution.Data]
+            [2.1.Entities]
+                <!-- Product.cs -->
+            [2.2.EF]
+                <!-- EShopDbContext.cs -->
+            [2.3.Enums]
+            [2.4.Configurations]
+                <!-- ProductConfiguration.cs --> [2.4.1]
+            [2.5.Extensions]
+                <!-- ModelBuilderExtension.cs -->   [2.5.1]
+            [*2.6*Repository]
+        [3.eShopSolution.Application]
+            [3.1.Catalog]
+                [3.1.1.Product]
+                    <!-- IProductService.cs --> [3.1.1.1]
+                    <!-- ProductService.cs -->
+                [3.1.2.Categories]
+                    <!-- ICategoryService.cs -->
+                    <!-- CategoryService.cs -->
+            [3.2.Common]
+                <!-- IFileStorageService.cs -->
+                <!-- FileStorageService.cs -->
+        [4.eShopSolution.ViewModels]
+            [4.1.Catalog]
+                [4.1.1.Product]
+                    <!-- ProductCreateRequest.cs --> [4.1.1.1]
+                    <!-- ProductUpdateRequest.cs -->
+                [4.1.2.Categories]
+                    <!-- CategoryCreateRequest.cs -->
+                    <!-- CategoryUpdateRequest.cs -->
+            [4.2.Common]
+                <!-- PageRequestBase.cs -->
+                <!-- ResultBase.cs -->
+                <!-- ErrorResult.cs -->
+                <!-- SuccessResult.cs -->
+        [5.eShopSolution.Utilities]   
+            [5.1.Constants]
+            [5.2.Exceptions]
+
+- Tầng [3], [4] có thể không cần chia thành [Module] mà tạo trực tiếp Folder theo từng [Entity] hoặc trực tiếp file
+- Chú ý:    
+    - [3.Common] chứa các [Service] tiện ích cho [3]
+    - [4.Common] chứa các [Khung-dữ-liệu] để giúp thêm thông tin vào [DTO]
+- Tầng [5.Utilities] giống như [Common] chung cho tất cả các [Project]

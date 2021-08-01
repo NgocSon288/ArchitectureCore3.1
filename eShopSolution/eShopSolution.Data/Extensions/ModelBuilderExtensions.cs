@@ -1,5 +1,6 @@
 ﻿using eShopSolution.Data.Entities;
 using eShopSolution.Data.Enums;
+using Microsoft.AspNetCore.Identity;
 
 //using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -85,37 +86,37 @@ namespace eShopSolution.Data.Extensions
                 );
 
             // any guid
-            //var roleId = new Guid("8D04DCE2-969A-435D-BBA4-DF3F325983DC");
-            //var adminId = new Guid("69BD714F-9576-45BA-B5B7-F00649BE00DE");
-            //modelBuilder.Entity<AppRole>().HasData(new AppRole
-            //{
-            //    Id = roleId,
-            //    Name = "admin",
-            //    NormalizedName = "admin",
-            //    Description = "Administrator role"
-            //});
+            var roleId = new Guid("3A4834EB-7CAC-4AB7-9264-2F3DE64691BB");
+            var adminId = new Guid("F5DB37AE-5F02-4EDA-8724-C2CA79BE046F");
+            modelBuilder.Entity<AppRole>().HasData(new AppRole
+            {
+                Id = roleId,
+                Name = "admin",
+                NormalizedName = "admin",
+                Description = "Administrator role"
+            });
 
-            //var hasher = new PasswordHasher<AppUser>();
-            //modelBuilder.Entity<AppUser>().HasData(new AppUser
-            //{
-            //    Id = adminId,
-            //    UserName = "admin",
-            //    NormalizedUserName = "admin",
-            //    Email = "tedu.international@gmail.com",
-            //    NormalizedEmail = "tedu.international@gmail.com",
-            //    EmailConfirmed = true,
-            //    PasswordHash = hasher.HashPassword(null, "Abcd1234$"),
-            //    SecurityStamp = string.Empty,
-            //    FirstName = "Toan",
-            //    LastName = "Bach",
-            //    Dob = new DateTime(2020, 01, 31)
-            //});
+            var hasher = new PasswordHasher<AppUser>();
+            modelBuilder.Entity<AppUser>().HasData(new AppUser
+            {
+                Id = adminId,
+                UserName = "admin",
+                NormalizedUserName = "admin",
+                Email = "18521694@gm.uit.edu.vn",
+                NormalizedEmail = "18521694@gm.uit.edu.vn",
+                EmailConfirmed = true,
+                PasswordHash = hasher.HashPassword(null, "@SOn123"),
+                SecurityStamp = string.Empty,
+                FirstName = "Ngọc",
+                LastName = "Sơn",
+                Dob = new DateTime(2020, 01, 31)
+            });
 
-            //modelBuilder.Entity<IdentityUserRole<Guid>>().HasData(new IdentityUserRole<Guid>
-            //{
-            //    RoleId = roleId,
-            //    UserId = adminId
-            //});
+            modelBuilder.Entity<IdentityUserRole<Guid>>().HasData(new IdentityUserRole<Guid>
+            {
+                RoleId = roleId,
+                UserId = adminId
+            });
 
             modelBuilder.Entity<Slide>().HasData(
               new Slide() { Id = 1, Name = "Second Thumbnail label", Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", SortOrder = 1, Url = "#", Image = "/themes/images/carousel/1.png", Status = Status.Active },

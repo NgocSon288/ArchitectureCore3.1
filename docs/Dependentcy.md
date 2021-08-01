@@ -9,10 +9,18 @@
 ## Json
     - Microsoft.Extensions.Configuration.Json
 
+## Identity 
+    - Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+## Sử dụng IFormFile
+    - Microsoft.AspNetCore.Http.Features
+
+## Sử dụng Swagger
+    - Swashbuckle.AspNetCore
+
 
 # ----------------------------------------------------------------
-# Link
-
+## Link
 ## EF Core
 - Tạo [Fluent-API] để config [Migration] thay vì dùng [Annotation]
     <!-- https://www.learnentityframeworkcore.com/configuration/fluent-api -->
@@ -34,3 +42,18 @@
 ### Seeding Data
 - Khởi tạo data
     <!-- https://docs.microsoft.com/vi-vn/ef/core/modeling/data-seeding -->
+
+## ---------------------------------------------------------------
+## Exception
+- Tạo custom exception
+    <!-- https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions -->
+
+## ---------------------------------------------------------------
+## Swagger
+    <!-- https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio -->
+    <!-- https://bekenty.com/add-swagger-to-your-web-api-in-asp-net-core-3/ --> Install Swagger
+
+## ---------------------------------------------------------------
+## ---------------------------------------------------------------
+## ---------------------------------------------------------------
+## ---------------------------------------------------------------

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zJpAPieCvRx2saZukS8Bh9hCfvU6dwVmfv7LjnPbG8h53OOWYYl83Hjd8nb/eWZaCbMF81mGwHbU7mGgwi3N7Q==",
+  "dgSpecHash": "RtVXhevitNqsLjKPeWL+Dw5mbQmiUCBUNOLKZFeuZVCl2CnkHA6rzLyTEzpgjJLXi+HYfPN41c2HJfS4bkHbQA==",
   "success": true,
   "projectFilePath": "D:\\Code\\Architecture\\ArchitectureCore3.1\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.17\\microsoft.aspnetcore.cryptography.internal.3.1.17.nupkg.sha512",
+    "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.17\\microsoft.aspnetcore.cryptography.keyderivation.3.1.17.nupkg.sha512",
+    "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.17\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -27,6 +30,8 @@
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.17\\microsoft.extensions.fileproviders.abstractions.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.17\\microsoft.extensions.fileproviders.physical.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.17\\microsoft.extensions.filesystemglobbing.3.1.17.nupkg.sha512",
+    "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.17\\microsoft.extensions.identity.core.3.1.17.nupkg.sha512",
+    "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.17\\microsoft.extensions.identity.stores.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.extensions.logging\\3.1.17\\microsoft.extensions.logging.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.17\\microsoft.extensions.logging.abstractions.3.1.17.nupkg.sha512",
     "C:\\Users\\Huynh Ngoc Son\\.nuget\\packages\\microsoft.extensions.options\\3.1.17\\microsoft.extensions.options.3.1.17.nupkg.sha512",

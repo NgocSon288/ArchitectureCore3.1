@@ -75,3 +75,8 @@ D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\
 D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
