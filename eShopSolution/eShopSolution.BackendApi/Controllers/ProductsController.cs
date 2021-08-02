@@ -18,7 +18,7 @@ namespace eShopSolution.BackendApi.Controllers
         public ProductsController(IProductService productService)
         {
             _productService = productService;
-        }
+            }
 
         [HttpGet]
         [Authorize]

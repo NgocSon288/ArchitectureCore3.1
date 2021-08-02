@@ -84,3 +84,6 @@ D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.BackendApi\
 D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.BackendApi\obj\Debug\netcoreapp3.1\eShopSolution.BackendApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+D:\Code\Architecture\ArchitectureCore3.1\eShopSolution\eShopSolution.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

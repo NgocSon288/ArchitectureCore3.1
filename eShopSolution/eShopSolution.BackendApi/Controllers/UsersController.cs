@@ -32,7 +32,7 @@ namespace eShopSolution.AdminApp.Controllers
 
         [HttpPost("Authenticates")]
         [AllowAnonymous]
-        public async Task<IActionResult> Authenticate([FromForm] LoginRequest request)
+        public async Task<IActionResult> Authenticate([FromBody] LoginRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -43,10 +43,10 @@ namespace eShopSolution.AdminApp.Controllers
 
             if(!result.IsSuccessed)
             {
-                return BadRequest(result.Message);
+                return BadRequest(result);
             }
 
-            return Ok(result.ResultObj);
+            return Ok(result);
         }
 
         [HttpPost]

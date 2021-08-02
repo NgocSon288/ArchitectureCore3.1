@@ -21,6 +21,17 @@
 ## Jwt - Authentication
     - Microsoft.AspNetCore.Authentication.JwtBearer
 
+## Razor RuntimeCompilation
+    - Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+
+## Newtonsoft Json
+    - Newtonsoft.Json
+
+## Deserialize Tokens
+    - Microsoft.IdentityModel.Loggin
+    - Microsoft.IdentityModel.Tokens
+    - Microsoft.IdentityModel.Tokens.Jwt
+
 
 # ----------------------------------------------------------------
 ## Link
@@ -57,6 +68,21 @@
     <!-- https://bekenty.com/add-swagger-to-your-web-api-in-asp-net-core-3/ --> Install Swagger
 
 ## ---------------------------------------------------------------
+# Fluent Validation
+    <!-- https://docs.fluentvalidation.net/en/latest/aspnet.html -->
+
+## Razor RuntimeCompilation
+    <!-- https://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-compilation?view=aspnetcore-5.0&tabs=visual-studio -->
+
+## Newtonsoft Json
+    - Newtonsoft.Json
+
+## HttpClientFactory
+    <!-- https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-5.0 -->
+
+## Use cookie authentication without ASP.NET Core Identity
+    <!-- https://docs.microsoft.com/en-us/aspnet/core/security/authentication/cookie?view=aspnetcore-5.0 -->
+
 ## ---------------------------------------------------------------
 ## ---------------------------------------------------------------
 ## ---------------------------------------------------------------

@@ -22,6 +22,17 @@
     - Swashbuckle.AspNetCore
 7. Jwt - Authentication
     - Microsoft.AspNetCore.Authentication.JwtBearer
+8. Fluent Validation
+    - FluentValidation.AspNetCore
+9. Razor RuntimeCompilation
+    - Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+10. Newtonsoft Json
+    - Newtonsoft.Json
+11. Deserialize Tokens
+    - Microsoft.IdentityModel.Loggin
+    - Microsoft.IdentityModel.Tokens
+    - Microsoft.IdentityModel.Tokens.Jwt
+
 ## How to configure and run
 
 ## How to contribute

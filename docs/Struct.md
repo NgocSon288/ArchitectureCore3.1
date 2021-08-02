@@ -7,6 +7,7 @@
         [4.eShopSolution.ViewModels] 
         [5.eShopSolution.Utilities]
         [6.eShopSolution.BackendApi]
+        [7.eShopSolution.AdminApp]
 
 # 1.WebApp
 
@@ -33,6 +34,7 @@
 - [4.2] chứa các [DTO] dùng chung như: [PagedResult], [API-Result]
 
 
+
 # ---------------------------------------------------------------------------
 # 5.Utilities
 - Chứa các code dùng chun cho các Project như: các biến [Constants], các [Custom-Exceptions]
@@ -41,6 +43,10 @@
 # 6.BackendAPI
 - Tầng này thực hiện tạo các [API] để có thể cho các [Application] khác thao tác dữ liệu tới
 - Xem thêm (Struct.BackendApi.md)
+
+# ---------------------------------------------------------------------------
+# 7.AdminApp
+- Là [Project-MVC] chứa code phần [Admin]. Ta có thể tạo  phần [Admin] trong  [Area] có một [Project] chung với [Client]
 
 # ---------------------------------------------------------------------------
 # Quy trình tạo DB basic [2.4.1]

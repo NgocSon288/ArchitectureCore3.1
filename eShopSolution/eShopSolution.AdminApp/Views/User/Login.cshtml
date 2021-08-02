@@ -1,0 +1,21 @@
+﻿@model LoginRequest;
+
+<div class="container">
+    <p class="display-4 text-center">Trang đăng nhập</p>
+    <form asp-action="Login" asp-controller="User" method="post">
+        <div asp-validation-summary="All"></div>
+        <div class="form-group">
+            <label for="">Tài khoản</label>
+            <input type="text" class="form-control" asp-for="UserName" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label>Mật khẩu</label>
+            <input type="password" class="form-control" asp-for="Password" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" asp-for="RememberMe">
+            <label class="form-check-label">Nhớ tài khoản</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+    </form>
+</div>
